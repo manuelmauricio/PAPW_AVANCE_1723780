@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	 <title>Agregar Producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!-- css del proyecto -->
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/card.css">
+	<link rel="icon" href="imagenes/icon.ico">
+	
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="plugins/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+   
+  </head>
+  <body   style="background-color : #f6f6f6;">
+  
+
+  
+  
+     <!-- NAVBAR PRINCIPAL-->
+	 
+	 
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light"  style="background-color:  #363636;">
+  <a class="navbar-brand" href="#"><img src = "imagenes/logo.png" width="90" height="35" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  	<div class="offset-md-1"></div>
+    <ul class="navbar-nav">
+
+	  <li class="nav-item dropdown navbar-right">
+        <a class="nav-link dropdown-toggle" href="#"  style="color:  white;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Ropa</a>
+          <a class="dropdown-item" href="#">Electrónica</a>
+		  <a class="dropdown-item" href="#">Accesorios</a>
+          <a class="dropdown-item" href="#">Videojuegos</a>
+		  <a class="dropdown-item" href="#">Electrodomésticos</a>
+          <a class="dropdown-item" href="#">Zapatos</a>
+        </div>
+      </li>
+	  <div class="offset-md-1"></div>
+	   <div class="col-sm-3 col-md-12">
+        <form class="navbar-form" role="search">
+        <div class="input-group margin-bottom-sm">
+
+            <input type="text" class="form-control" placeholder="Search" name="q">
+		    	<div class="dropdown">  
+  <button type="button" class="btn btn-primary dropdown-toggle"  style="background-color: #b82b21;"  data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i>
+    Buscar por..
+  </button>
+
+
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><i class="fa fa-sort-alpha-desc fa-fw"></i>Nombre</a>
+    <a class="dropdown-item" href="#"><i class="fa fa-pencil fa-fw"></i>Descripcion</a>
+	<a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i>Usuario</a>
+	<a class="dropdown-item" href="#"><i class="fa fa-book fa-fw"></i>Categoria</a>
+	<a class="dropdown-item" href="#"><i class="fa fa-calendar fa-fw"></i>Fecha</a>
+  </div>
+</div>			
+        </div>
+		
+		
+        </form>
+		
+		
+  
+    </div>
+    </ul>
+	
+		<ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Carrito.html"   style="color:  white;" > <i class="fa fa-shopping-cart fa-fw"></i> Carrito <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="HistorialDeCompra.html"   style="color:  white;" > <i class="fa fa-history fa-fw"></i> Historial <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item dropdown navbar-right">
+        <a class="nav-link dropdown-toggle" href="#"  style="color:  white;"id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Usuario
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
+		  
+        </div>
+		
+      </li>
+	  <a class="navbar-brand" href="#"><img src = "imagenes/avatar.png" width="45" height="45" ></a>
+	  </ul>
+	
+	
+  </div>
+</nav>
+
+
+
+<br>
+	 
+
+
+<section class="maincontainer">
+
+
+<br>
+<div class="d-flex justify-content-center">
+<h2 class="display-4">Nuevo producto</h2>
+</div>	
+
+
+
+
+<br>
+
+
+<div class="row justify-content-center justify-content-md-center">
+
+
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputName">Nombre</label>
+      <input type="name" pattern="[a-zA-Z0-9]{6,}" class="form-control" id="inputName" aria-describedby="namelHelp" placeholder="Nombre">
+	  <small id="nameHelp" class="form-text text-muted">Nombre del producto</small>
+    </div>
+	
+    <div class="form-group col-md-6">
+      <label for="inputName2">Categoria</label>
+	  <select class="form-control" id="exampleFormControlSelect1">
+      <option>Ropa</option>
+      <option>Calzado</option>
+      <option>Electrodoméstico</option>
+      <option>Etc..</option>
+    </select>
+	  <small id="nameHelp" class="form-text text-muted">Categoria del producto</small>
+    </div>			
+  </div>	
+  
+  <div class="form-row">
+  <div class="form-group col-md-12">
+      <label for="inputtext">Descripción</label>
+      <input type="text" pattern="[a-zA-Z0-9]{6,}" class="form-control" id="inputtext" aria-describedby="textHelp" placeholder="Descripcion breve">
+	  <small id="textHelp" class="form-text text-muted">Escribe una breve descripción del producto</small>
+    </div>		
+	  </div>
+	  
+	  
+	  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputnumber">Unidades</label>
+      <input type="number" pattern="[a-zA-Z0-9]{6,}" class="form-control" id="inputnumber" aria-describedby="numberHelp" placeholder="0">
+	  <small id="numberHelp" class="form-text text-muted">Unidades del producto</small>
+    </div>
+	
+    <div class="form-group col-md-6">
+      <label for="inputnumber">Precio</label>
+      <input type="number" pattern="[a-zA-Z0-9]{6,}" class="form-control" id="inputnumber" aria-describedby="numberHelp" placeholder="$$$$$$$$">
+	  <small id="numberHelp" class="form-text text-muted">Precio del producto</small>
+    </div>			
+  </div>	
+  
+  
+   <div class="form-row">
+  <div class="form-group col-md-12">
+  <label for="inputimage">Imágenes del producto</label>
+		    <div class="input-group mb-3">
+			  <input type="file" class="form-control"   placeholder="Image" aria-label="Image" aria-describedby="basic-addon1" name="Image">
+			  <small id="imagenHelp" class="form-text text-muted">Cargra 3 imágenes del producto desde tu coputadora</small>
+			</div>
+	  	</div>
+		</div>
+		
+		 <div class="form-row">
+  <div class="form-group col-md-12">
+		    <div class="input-group mb-3">
+			  <input type="file" class="form-control"   placeholder="Image" aria-label="Image" aria-describedby="basic-addon1" name="Image">
+		
+			</div>
+	  	</div>
+		</div>
+		
+		
+		 <div class="form-row">
+  <div class="form-group col-md-12">
+
+		    <div class="input-group mb-3">
+			  <input type="file" class="form-control"   placeholder="Image" aria-label="Image" aria-describedby="basic-addon1" name="Image">
+			</div>
+	  	</div>
+		</div>
+		
+		
+		 <div class="form-row">
+  <div class="form-group col-md-12">
+  <label for="inputimage">Agregar video</label>
+		    <div class="input-group mb-3">
+			  <input type="file" class="form-control"   placeholder="video" aria-label="video" aria-describedby="basic-addon1" name="video">
+			  <small id="videoHelp" class="form-text text-muted">Cargra un video promocionando el producto</small>
+			</div>
+	  	</div>
+		</div>
+	  
+
+  <button type="submit" style="background-color: #b82b21; border-color : #b82b21; width: 30%;  color: white; ">Registrarse  <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+  <button type="submit" style="background-color: #b82b21; border-color : #b82b21; width: 30%;  color: white; ">Añadir al borrador  <i class="fa fa-pencil" aria-hidden="true"></i></button>
+</form>
+		</div>
+		
+		<br>
+</section>
+			
+
+
+	
+  </body>
+</html>
